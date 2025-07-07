@@ -62,7 +62,7 @@ You should see the following :
 [6]:    0x7530
 [7]:    0x7530
 
-If you dont , there is a good chanse that you have swaped A and B
+If you dont , there is a good chance that you have swaped A and B
 
 🐍 Step 3: Set Up Python Environment
 1. Install Python & Dependencies
@@ -84,7 +84,7 @@ bash
 pip install minimalmodbus paho-mqtt
 
 📜 Step 4: Python Script for BMS Communication
-
+Copy the serial_read.py into your "bms-monitor" folder
 
 
 
@@ -95,6 +95,8 @@ bash
 
 sudo usermod -a -G dialout $USER
 sudo chmod a+rw /dev/ttyUSB0
+
+If it works as exspected you can setup the scrip to auto start 
 
 🚀 Step 5: Run at Startup (systemd Service)
 1. Create a systemd Service
@@ -145,12 +147,4 @@ Now you have:
 ✔ Automatic startup via systemd
 ✔ Debugging steps if issues arise
 
-Next steps:
 
-    Send data to MQTT (for Node-RED/Home Assistant)
-
-    Log to a database (InfluxDB, SQLite)
-
-    Set up alerts for low voltage/current
-
-Let me know if you need help with any step! 🚀
