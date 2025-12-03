@@ -51,6 +51,7 @@ screen /dev/ttyUSB0 9600  # Replace with your port and baud rate
 On the BMS set the RS485 to WOW_MODBUS
 
 Test the BMS Comunication with the following command 
+
 mbpoll -b 9600 -P none -m rtu -a 1 -t 4:hex -r 1 -c 32 /dev/ttyUSB0
 You should see the following :
  Polling slave 1... Ctrl-C to stop)
